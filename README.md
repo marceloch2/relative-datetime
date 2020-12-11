@@ -6,13 +6,13 @@ a new ISO6801 datetime string.
 ## Usage
 
 ```bash
-npm install @c16s/relative-datetime
+npm install relative-datetime-como
 ```
 
 #### String input
 
 ```js
-const parseDate = require('@c16s/relative-datetime');
+const parseDate = require('relative-datetime-como');
 
 let date = parseDate('2017-01-01', '2018-01-03T12:12:12Z');
 // '2017-01-01T12:12:12Z'
@@ -24,14 +24,14 @@ let date = parseDate('2017-01-01T00:00:00Z', '2018-01-03T12:12:12Z');
 #### Object input
 
 ```js
-let date = parseDate({ year: -1, month: 0, day: 1 }, '2018-01-03T12:12:12Z');
+let date = parseDate({year: -1, month: 0, day: 1}, '2018-01-03T12:12:12Z');
 // '2017-01-01T12:12:12Z'
 ```
 
 #### Array input
 
 ```js
-let date = parseDate([ 2017, "+3", "last" ],  '2018-01-03T12:12:12Z');
+let date = parseDate([2017, '+3', 'last'], '2018-01-03T12:12:12Z');
 // '2017-04-30T12:12:12Z'
 ```
 
@@ -62,8 +62,7 @@ day of the given month". Unlike with native JavaScript dates, `month` is base 1
 A weekdays can be described by a `year`, `week` and `day`. In this case, `day`
 is the day of the week, starting with monday as `1`. This follows the ISO 8601
 standard. Keep in mind that a date in a certain year's first or last week does
-not necessarily fall in that year. For example, `{ year: 2015, week: 1, day: 1
-}` means 2014-12-29.
+not necessarily fall in that year. For example, `{ year: 2015, week: 1, day: 1 }` means 2014-12-29.
 
 #### Time
 

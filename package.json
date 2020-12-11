@@ -1,6 +1,6 @@
 {
-  "name": "@c16s/relative-datetime",
-  "version": "2.1.1",
+  "name": "relative-datetime-como",
+  "version": "1.0.1",
   "description": "Parse relative datetime descriptions",
   "main": "index.js",
   "files": [
@@ -16,15 +16,10 @@
     "moment": "^2.17.1"
   },
   "devDependencies": {
-    "@c16s/eslint-plugin-lint": "^1.0.2",
-    "eslint_d": "^5.2.2",
     "husky": "^0.14.3",
     "jest": "^22.0.5"
   },
   "eslintConfig": {
-    "extends": [
-      "plugin:@c16s/lint/base"
-    ],
     "parserOptions": {
       "ecmaVersion": 5
     },
@@ -53,11 +48,5 @@
     "singleQuote": true,
     "bracketSpacing": false,
     "trailingComma": "es5"
-  },
-  "jspm": {
-    "registry": "npm"
-  },
-  "repository": "Connectedmolecules/relative-datetime",
-  "author": "Connected Molecules B.V.",
-  "license": "UNLICENSED"
+  }
 }
