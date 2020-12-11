@@ -1,0 +1,63 @@
+{
+  "name": "@c16s/relative-datetime",
+  "version": "2.1.1",
+  "description": "Parse relative datetime descriptions",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint_d .",
+    "format": "eslint_d --quiet --fix .",
+    "precommit": "eslint_d $(git diff --name-only --staged '*.js')"
+  },
+  "dependencies": {
+    "moment": "^2.17.1"
+  },
+  "devDependencies": {
+    "@c16s/eslint-plugin-lint": "^1.0.2",
+    "eslint_d": "^5.2.2",
+    "husky": "^0.14.3",
+    "jest": "^22.0.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:@c16s/lint/base"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 5
+    },
+    "env": {
+      "es6": false,
+      "commonjs": true
+    },
+    "rules": {
+      "no-var": "off",
+      "object-shorthand": [
+        "off",
+        "never"
+      ],
+      "prefer-const": "off",
+      "prefer-spread": "off",
+      "prefer-template": "off",
+      "require-jsdoc": "off"
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "tmp/"
+  ],
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "trailingComma": "es5"
+  },
+  "jspm": {
+    "registry": "npm"
+  },
+  "repository": "Connectedmolecules/relative-datetime",
+  "author": "Connected Molecules B.V.",
+  "license": "UNLICENSED"
+}
